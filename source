@@ -1,0 +1,30 @@
+/*
+* Author: Tyler Scotti
+* Purpose: This tool will take in a year provided by a user, and will prompt it that year is a leap year or not.
+*
+*
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+//Variable Declaration
+   int inputYear;
+
+//User input
+   cout << "Enter in a year: ";
+   cin >> inputYear;
+   
+//Check if inputYear is a leap year.
+   if((inputYear % 100) % 4 != 0){
+      cout << inputYear << " - not a leap year" << endl;
+//Century Year check
+   } else if((inputYear % 100 == 0) && (inputYear % 400 != 0)){
+      cout << inputYear << " - not a leap year" << endl;
+   } else {
+//Will only get here if inputYear is not a century year, and is a leap year
+         cout << inputYear << " - leap year" << endl;
+      } 
+   return 0;
+}
