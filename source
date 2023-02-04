@@ -23,7 +23,7 @@ int main() {
    } else if((inputYear % 100 == 0) && (inputYear % 400 != 0)){
       cout << inputYear << " - not a leap year" << endl;
    } else {
-//Will only get here if inputYear is not a century year, and is a eligble to be a leap year
+//Will only get here if inputYear is eligble to be a leap year
          cout << inputYear << " - leap year" << endl;
       } 
    return 0;
