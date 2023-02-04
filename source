@@ -10,13 +10,13 @@
 * First if Pass3: 2016 % 4 = 0, thus can be a leap year and is tested further.
 *
 * 1725 isn't tested further since it didn't pass initial check, thus never got the chance to be tested furhter.
-* Second if Pass: 1600 % 100 = 0, and is tested again by 1600 % 400 = 0. So 1600 is a century year, that is also a leap year. Drops to final else statement.
-* Second if Pass: 1800 % 100 = 0, and is tested again by 1800 % 400 = 200. So 1800 is a century year that is NOT a leap year. - Ouputted as such. Program returns 0;
-* Second if Pass: 2016 % 100 = 16, thus isn't a leap year and doesn't get tested here. Drops to final else statement.
+* Second if Pass1: 1600 % 100 = 0, and is tested again by 1600 % 400 = 0. So 1600 is a century year, that is also a leap year. Drops to final else statement.
+* Second if Fail: 1800 % 100 = 0, and is tested again by 1800 % 400 = 200. So 1800 is a century year that is NOT a leap year. - Ouputted as such. Program returns 0;
+* Third if Pass2: 2016 % 100 = 16, thus isn't a leap year and doesn't get tested here. Drops to final else statement.
 *
 * Last else statement is a catch all for the entries that made it through the filter. If a number gets here, the program computes that it is a leap year. 
 * - Outputted as such. Program returns 0;
-*
+*  
 */
 
 #include <iostream>
