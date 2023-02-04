@@ -16,14 +16,14 @@ int main() {
    cout << "Enter in a year: ";
    cin >> inputYear;
    
-//Check if inputYear is a leap year.
+//Check if inputYear is a leap year. If it passes the test, only century years and eligble leap year numbers will drop down.
    if((inputYear % 100) % 4 != 0){
       cout << inputYear << " - not a leap year" << endl;
-//Century Year check
+//Century Year check - Since we know all century years can't be a leap year, this removes them thus we are only left with eligble leap year numbers.
    } else if((inputYear % 100 == 0) && (inputYear % 400 != 0)){
       cout << inputYear << " - not a leap year" << endl;
    } else {
-//Will only get here if inputYear is not a century year, and is a leap year
+//Will only get here if inputYear is not a century year, and is a eligble to be a leap year
          cout << inputYear << " - leap year" << endl;
       } 
    return 0;
