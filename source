@@ -1,6 +1,6 @@
 /*
 * Author: Tyler Scotti
-* Purpose: This tool will take in a year provided by a user, and will prompt it that year is a leap year or not.
+* Purpose: This tool will take in a year provided by a user, and will prompt if that year is a leap year or not.
 *
 *
 */
